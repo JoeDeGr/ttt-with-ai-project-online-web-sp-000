@@ -29,9 +29,9 @@ class Players < Player
           when center?
             input = "5"
           when opposing_corner != nil && board.taken?(opposing_corner) == false
-            opposing_corner
+            input = opposing_corner
           else
-            move[rand(move.length)]
+            input = move[rand(move.length)]
         end
       end
 
