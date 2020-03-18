@@ -27,7 +27,7 @@ class Players < Player
           when block != nil
             block + 1
           when center?
-            input = 5
+            input = "5"
           when opposing_corner != nil && board.taken?(opposing_corner) == false
             opposing_corner
           else
