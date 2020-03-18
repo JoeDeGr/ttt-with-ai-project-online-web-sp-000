@@ -23,13 +23,13 @@ class Players < Player
         end
         case
           when win != nil
-            input = win + 1
+            win + 1
           when block != nil
-            input = block + 1
+            block + 1
           when center?
             input = 5
           when opposing_corner != nil && board.taken?(opposing_corner) == false
-            input = opposing_corner
+            opposing_corner
           else
             move[rand(move.length)]
         end
