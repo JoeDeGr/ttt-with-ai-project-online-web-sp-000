@@ -30,8 +30,6 @@ class Players < Player
             input = 5
           when opposing_corner != nil && board.taken?(opposing_corner) == false
             input = opposing_corner
-          when corners != nil
-            input = corners + 1
           else
             move[rand(move.length)]
         end
