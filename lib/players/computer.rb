@@ -23,9 +23,9 @@ class Players < Player
         end
         case
           when win != nil
-            win + 1
+            input = win + 1
           when block != nil
-            block + 1
+            input = block + 1
           when center?
             input = "5"
           when opposing_corner != nil && board.taken?(opposing_corner) == false
